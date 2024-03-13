@@ -24,6 +24,7 @@ app.use(cookieParser())
 
 
 app.use('/uploads',express.static('uploads'))
+app.use('/',express.static('dist'))
 app.use('/',musicRouter)
 app.use('/user',userRouter)
 
